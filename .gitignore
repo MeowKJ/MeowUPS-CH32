@@ -1,0 +1,26 @@
+//c语言
+// 忽略编译生成的文件
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dSYM
+*.d
+*.idb
+*.ilk
+*.pdb
+*.lib
+*.exp
+*.obj
+*.ilk
+*.idb
+*.pdb
+*.ilk
+*.idb
+*.pdb
+*.ilk
+*.idb
+*.pdb
+
+obj/
