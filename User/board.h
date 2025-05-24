@@ -21,6 +21,9 @@ void close_LED(void);
 void set_BOOST (FlagStatus bit);
 void set_OUTPUT (FlagStatus bit);
 void TIM2_Init(void);
+
+void set_BOOST_OUTPUT(FlagStatus bit);
+
 #ifdef __cplusplus
 }
 #endif

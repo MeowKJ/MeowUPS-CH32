@@ -34,20 +34,6 @@ void Board_Init (void) {
     EXTI_Init (&EXTI_InitStructure);
 
 
-
-    // //配置PD7中断
-    // GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7;
-    // GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-    // GPIO_Init (GPIOD, &GPIO_InitStructure);
-
-    // GPIO_EXTILineConfig (GPIO_PortSourceGPIOD, GPIO_PinSource7);
-    // EXTI_InitStructure.EXTI_Line = EXTI_Line7;
-    // EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
-    // EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;
-    // EXTI_InitStructure.EXTI_LineCmd = ENABLE;
-    // EXTI_Init (&EXTI_InitStructure);
-
-
     // 配置NVIC
     NVIC_InitStructure.NVIC_IRQChannel = EXTI7_0_IRQn;
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
@@ -163,8 +149,6 @@ void LED_OnOff (uint8_t num, FlagStatus state) {
     }
 }
 
-//
-
 void LED_Toggle (uint8_t num) {
     switch (num) {
     case 0:
@@ -194,11 +178,6 @@ void close_LED() {
     }
 }
 
-// void DCDC_Toggle() {
-//     GPIO_WriteBit (GPIOC, GPIO_Pin_4,
-//                    (BitAction)(1 - GPIO_ReadOutputDataBit (GPIOC, GPIO_Pin_4)));
-// }
-
 
 void set_BOOST (FlagStatus bit) {
     GPIO_WriteBit (GPIOC, GPIO_Pin_4, (BitAction)bit);
@@ -206,4 +185,9 @@ void set_BOOST (FlagStatus bit) {
 
 void set_OUTPUT (FlagStatus bit) {
     GPIO_WriteBit (GPIOC, GPIO_Pin_5, (BitAction)bit);
+}
+
+void set_BOOST_OUTPUT(FlagStatus bit){
+    set_BOOST(bit);
+    set_OUTPUT(bit);
 }

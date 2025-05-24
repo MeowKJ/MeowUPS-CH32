@@ -5,7 +5,7 @@
 			"type": "mrs-debugger",
 			"request": "launch",
 			"name": "CH32V003F4U6",
-			"cwd": "c:\\Users\\ijink\\Desktop\\CH32V003F4U6",
+			"cwd": "c:\\Users\\ijink\\Desktop\\re\\MeowUPS-CH32",
 			"openOCDCfg": {
 				"useLocalOpenOCD": true,
 				"executable": "c:/CommonProgram/MounRiver/MounRiver_Studio2/resources/app/resources/win32/components/WCH/OpenOCD/OpenOCD/bin/openocd.exe",
@@ -39,8 +39,8 @@
 					"additionalCommands": []
 				},
 				"loadedFiles": {
-					"executableFile": "c:\\Users\\ijink\\Desktop\\CH32V003F4U6\\obj\\CH32V003F4U6.elf",
-					"symbolFile": "c:\\Users\\ijink\\Desktop\\CH32V003F4U6\\obj\\CH32V003F4U6.elf",
+					"executableFile": "c:\\Users\\ijink\\Desktop\\re\\MeowUPS-CH32\\obj\\CH32V003F4U6.elf",
+					"symbolFile": "c:\\Users\\ijink\\Desktop\\re\\MeowUPS-CH32\\obj\\CH32V003F4U6.elf",
 					"executableFileOffset": 0,
 					"symbolFileOffset": 0
 				},
